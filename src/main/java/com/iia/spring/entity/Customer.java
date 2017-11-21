@@ -20,7 +20,7 @@ public class Customer {
     private int cp;
     private String city;
     private String address;
-    @OneToMany(mappedBy = "Order")
+    @OneToMany(mappedBy = "customer")
     private List<MyOrder> Orders;
     
     protected Customer() {}

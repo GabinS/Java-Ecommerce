@@ -24,7 +24,7 @@ public class MyOrder {
 	@ManyToOne
 	@JoinColumn
 	private Customer customer;
-	@OneToMany(mappedBy="OrderProduct")
+	@OneToMany(mappedBy="order")
     private List<OrderProduct> ordersproducts;
 	
 	/**

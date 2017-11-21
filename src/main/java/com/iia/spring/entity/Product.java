@@ -21,7 +21,7 @@ public class Product {
 	private int quantity;
 	private boolean dead;
 	private float price;
-	@OneToMany(mappedBy="OrderProduct")
+	@OneToMany(mappedBy="product")
     private List<OrderProduct> ordersproducts;
 	
 	protected Product() {}
